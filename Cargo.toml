@@ -9,13 +9,9 @@ readme = "README.md"
 keywords = ["array", "macro", "initialization", "init"]
 license = "MIT OR Apache-2.0"
 
-[lib]
-proc-macro = true
-
 [dependencies]
-quote = "0.6.10"
+arr_macro_impl = { version = "0.0.1", path = "impl" }
+proc-macro-hack = "0.5"
 
-[dependencies.syn]
-version = "0.15.23"
-default-features = true
-features = ["full"]
+[workspace]
+members = ["impl"]

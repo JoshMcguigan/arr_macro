@@ -2,7 +2,7 @@
 
 Array macro helps initialize arrays. It is useful when initializing large arrays (greater than 32 elements), or arrays of types which do not implement the copy or default traits. 
 
-Array macro is implemented in 100% safe Rust, although it does require nightly to enable `#![feature(proc_macro_hygiene)]`.
+Array macro is implemented in 100% safe Rust.
 
 For further background on the motivation behind this crate, check out [this blog post](https://www.joshmcguigan.com/blog/array-initialization-rust/).
 
