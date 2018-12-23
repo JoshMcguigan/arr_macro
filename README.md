@@ -4,6 +4,8 @@ Array macro helps initialize arrays. It is useful when initializing large arrays
 
 Array macro is implemented in 100% safe Rust, although it does require nightly to enable `#![feature(proc_macro_hygiene)]`.
 
+For further background on the motivation behind this crate, check out [this blog post](https://www.joshmcguigan.com/blog/array-initialization-rust/).
+
 ## Usage
 
 ```rust
