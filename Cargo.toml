@@ -1,0 +1,21 @@
+[package]
+name = "arr_macro"
+version = "0.0.1"
+authors = ["Josh Mcguigan"]
+edition = "2018"
+description = "Initialize arrays with ease!"
+repository = "https://github.com/JoshMcguigan/arr_macro"
+readme = "README.md"
+keywords = ["array", "macro", "initialization", "init"]
+license = "MIT OR Apache-2.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "0.6.10"
+
+[dependencies.syn]
+version = "0.15.23"
+default-features = true
+features = ["full"]
