@@ -3,6 +3,7 @@ name = "arr_macro_impl"
 version = "0.1.0"
 authors = ["Josh Mcguigan"]
 edition = "2018"
+description = "Private impl crate for arr_macro"
 repository = "https://github.com/JoshMcguigan/arr_macro"
 license = "MIT OR Apache-2.0"
 
