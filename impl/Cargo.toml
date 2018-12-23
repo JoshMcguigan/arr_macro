@@ -1,6 +1,6 @@
 [package]
 name = "arr_macro_impl"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["Josh Mcguigan"]
 edition = "2018"
 repository = "https://github.com/JoshMcguigan/arr_macro"
