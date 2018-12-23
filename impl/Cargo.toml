@@ -1,0 +1,19 @@
+[package]
+name = "arr_macro_impl"
+version = "0.0.1"
+authors = ["Josh Mcguigan"]
+edition = "2018"
+repository = "https://github.com/JoshMcguigan/arr_macro"
+license = "MIT OR Apache-2.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro-hack = "0.5"
+quote = "0.6.10"
+
+[dependencies.syn]
+version = "0.15.23"
+default-features = true
+features = ["full"]
