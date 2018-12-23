@@ -1,4 +1,4 @@
-# Array Macro
+# Array Macro [![crates.io badge](https://img.shields.io/crates/v/arr_macro.svg)](https://crates.io/crates/arr_macro)
 
 Array macro helps initialize arrays. It is useful when initializing large arrays (greater than 32 elements), or arrays of types which do not implement the copy or default traits. 
 
