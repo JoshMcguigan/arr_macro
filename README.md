@@ -9,8 +9,6 @@ For further background on the motivation behind this crate, check out [this blog
 ## Usage
 
 ```rust
-#![feature(proc_macro_hygiene)]
-
 use arr_macro::arr;
 
 fn main() {
