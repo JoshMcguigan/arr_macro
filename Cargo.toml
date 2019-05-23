@@ -1,6 +1,6 @@
 [package]
 name = "arr_macro"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Josh Mcguigan"]
 edition = "2018"
 description = "Initialize arrays with ease!"
@@ -10,7 +10,7 @@ keywords = ["array", "macro", "initialization", "init"]
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-arr_macro_impl = { version = "0.1.1", path = "impl" }
+arr_macro_impl = { version = "0.1.2", path = "impl" }
 proc-macro-hack = "0.5"
 
 [workspace]
