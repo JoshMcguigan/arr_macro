@@ -37,7 +37,11 @@ pub fn arr(input: TokenStream) -> TokenStream {
         quantity
     } = parse_macro_input!(input as ArrayInit);
 
-    let iter = std::iter::repeat(value).take(quantity.value() as usize);
+    let iter = std::iter::repeat(value).take(
+        quantity
+            .base10_parse::<usize>()
+            .expect("Failed to parse LitInt as usize"),
+    );
 
     let result = quote! {
         [#(#iter),*]
