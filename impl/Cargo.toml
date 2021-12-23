@@ -11,7 +11,6 @@ license = "MIT OR Apache-2.0"
 proc-macro = true
 
 [dependencies]
-proc-macro-hack = "0.5"
 quote = "1.0"
 
 [dependencies.syn]
