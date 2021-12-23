@@ -1,14 +1,9 @@
 #![forbid(unsafe_code)]
 
 use proc_macro::TokenStream;
-use syn::parse::Parse;
-use syn::parse::ParseStream;
-use syn::parse::Result;
-use syn::{Token, parse_macro_input};
-
 use quote::quote;
-use syn::Expr;
-use syn::LitInt;
+use syn::parse::{Parse, ParseStream, Result};
+use syn::{parse_macro_input, Expr, LitInt, Token};
 
 struct ArrayInit {
     value: Expr,
