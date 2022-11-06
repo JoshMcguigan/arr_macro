@@ -1,20 +1,19 @@
 #[cfg(test)]
 mod tests {
+    use std::sync::atomic::{AtomicU64, Ordering};
+
     use arr_macro::arr;
 
     #[test]
     fn main_test() {
         let x: [Option<String>; 3] = arr![None; 3];
-        assert_eq!(
-            [None, None, None],
-            x
-        );
+        assert_eq!([None, None, None], x);
 
         // works with all enum types (and impl copy is not required)
         #[allow(dead_code)]
         enum MyEnum {
             A,
-            B
+            B,
         }
         let _: [MyEnum; 33] = arr![MyEnum::A; 33];
 
@@ -38,5 +37,10 @@ mod tests {
         assert_eq!(0, x[0].member);
         assert_eq!(1, x[1].member);
         assert_eq!(2, x[2].member);
+
+        // Support nested calls
+        let sample_nested: [[AtomicU64; 64]; 64] = arr![ arr![AtomicU64::new(0) ; 64] ; 64];
+        sample_nested[0][1].fetch_add(20, Ordering::Relaxed);
+        assert_eq!(20 as u64, sample_nested[0][1].load(Ordering::Relaxed));
     }
 }
