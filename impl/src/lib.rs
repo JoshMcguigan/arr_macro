@@ -3,7 +3,6 @@
 extern crate proc_macro;
 
 use proc_macro::TokenStream;
-use proc_macro_hack::proc_macro_hack;
 use syn::parse::Parse;
 use syn::parse::ParseStream;
 use syn::parse::Result;
@@ -27,7 +26,7 @@ impl Parse for ArrayInit {
     }
 }
 
-#[proc_macro_hack]
+#[proc_macro]
 pub fn arr(input: TokenStream) -> TokenStream {
     let ArrayInit { value, quantity } = parse_macro_input!(input as ArrayInit);
 
