@@ -39,4 +39,9 @@ mod tests {
         assert_eq!(1, x[1].member);
         assert_eq!(2, x[2].member);
     }
+
+    #[test]
+    fn two_dimension_arr() {
+        let _ = arr![arr![0; 3]; 3];
+    }
 }

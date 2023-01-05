@@ -1,6 +1,6 @@
 [package]
 name = "arr_macro_impl"
-version = "0.1.3"
+version = "0.2.1"
 authors = ["Josh Mcguigan"]
 edition = "2018"
 description = "Private impl crate for arr_macro"
